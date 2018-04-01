@@ -14,8 +14,11 @@ RUN apt-get update && \
         libncurses5-dev \
         ncurses-doc \
         libncursesw5-dev \
+        zlib1g-dev \
         wget \
     && apt-get clean
+
+RUN docker-php-ext-install zip
 
 #--------------------------------------------------
 # Composer
