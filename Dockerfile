@@ -48,4 +48,4 @@ RUN cd ~/ && \
     docker-php-ext-enable ncurses && \
     rm -Rf ~/ncurses ~/ncurses-1.0.2 ~/channels.xml
 
-WORKDIR /var/src/app
+WORKDIR /app
